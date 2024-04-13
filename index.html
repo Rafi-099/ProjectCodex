@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Information Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 20px;">Passports</h1> <!-- Added heading for the page -->
+    <div class="card-container">
+        <!-- Card 1: USA -->
+        <div class="card" onclick="openPopup('USA', 'The United States passport grants visa-free access to 184 countries, making it one of the most powerful passports for international travel.')">
+            <img src="USA.jpg" alt="USA Passport">
+            <h3>United States</h3>
+            <p>Visa-free access to 184 countries.</p>
+        </div>
+        
+        <!-- Card 2: Canada -->
+        <div class="card" onclick="openPopup('Canada', 'Canadian passports are bilingual, reflecting the country’s English and French heritage, and provide visa-free access to 183 countries.')">
+            <img src="Canada.jpeg" alt="Canada Passport">
+            <h3>Canada</h3>
+            <p>Visa-free access to 183 countries.</p>
+        </div>
+
+        <!-- Card 3: United Kingdom -->
+        <div class="card" onclick="openPopup('UK', 'The United Kingdom passport offers visa-free or visa-on-arrival access to 185 countries and ranks very highly in global travel freedom.')">
+            <img src="UK.jpeg" alt="UK Passport">
+            <h3>United Kingdom</h3>
+            <p>Visa-free access to 185 countries.</p>
+        </div>
+
+        <!-- Card 4: Germany -->
+        <div class="card" onclick="openPopup('Germany', 'German passport holders enjoy visa-free access to 189 countries, making it one of the most powerful passports in the world.')">
+            <img src="Germany.jpg" alt="Germany Passport">
+            <h3>Germany</h3>
+            <p>Visa-free access to 189 countries.</p>
+        </div>
+
+        <!-- Card 5: Japan -->
+        <div class="card" onclick="openPopup('Japan', 'The Japanese passport is the world’s strongest, with visa-free or visa-on-arrival access to 190 countries.')">
+            <img src="Japan.avif" alt="Japan Passport">
+            <h3>Japan</h3>
+            <p>Visa-free access to 190 countries.</p>
+        </div>
+
+        <!-- Card 6: Australia -->
+        <div class="card" onclick="openPopup('Australia', 'Australian passports rank very highly in terms of travel freedom, providing visa-free access to 185 countries.')">
+            <img src="Australia.jpeg" alt="Australia Passport">
+            <h3>Australia</h3>
+            <p>Visa-free access to 185 countries.</p>
+        </div>
+
+        <!-- Card 7: Italy -->
+        <div class="card" onclick="openPopup('Italy', 'Italian passport holders can travel to 188 countries without a visa, making Italy’s passport one of the most powerful.')">
+            <img src="Italy.jpeg" alt="Italy Passport">
+            <h3>Italy</h3>
+            <p>Visa-free access to 188 countries.</p>
+        </div>
+
+        <!-- Card 8: Sweden -->
+        <div class="card" onclick="openPopup('Sweden', 'Swedish passport provides visa-free or visa-on-arrival access to 187 countries globally.')">
+            <img src="Sweden.jpeg" alt="Sweden Passport">
+            <h3>Sweden</h3>
+            <p>Visa-free access to 187 countries.</p>
+        </div>
+
+        <!-- Card 9: Singapore -->
+        <div class="card" onclick="openPopup('Singapore', 'Singapore passport offers visa-free access to 190 countries, tying with Japan for the most travel-friendly passport.')">
+            <img src="Singapore.jpeg" alt="Singapore Passport">
+            <h3>Singapore</h3>
+            <p>Visa-free access to 190 countries.</p>
+        </div>
+
+        <!-- Card 10: France -->
+        <div class="card" onclick="openPopup('France', 'French passport holders enjoy visa-free access to 188 countries, attributed to its extensive diplomatic networks and international relations.')">
+            <img src="France.jpeg" alt="France Passport">
+            <h3>France</h3>
+            <p>Visa-free access to 188 countries.</p>
+        </div>
+    </div>
+
+    <!-- Popup Window -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title">Passport Details</h2>
+            <p id="popup-info">Details about the passport and country...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
